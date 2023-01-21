@@ -1,0 +1,13 @@
+{
+  "Employee": [
+    {
+      "name": "vinay",
+      "mail": "admin@gmail.com",
+      "dob": "2022-12-08",
+      "tel": "45678912235",
+      "address": "as",
+      "designation": "cdc",
+      "id": 1
+    }
+  ]
+}

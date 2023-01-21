@@ -1,0 +1,38 @@
+<table class="table table-striped">
+    <thead>
+      <tr >
+        <th scope="col">#</th>
+        <th scope="col">Name</th>
+        <th scope="col">Phone No.</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Action</th>        
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of empList">
+        <td scope="row">{{emp.id}}</td>
+        <td>{{emp.name}}</td>
+        <td>{{emp.tel}}</td>
+        <td>{{emp.designation}}</td>
+        <td>
+          <a href=""><i class="bi bi-pencil-square"></i></a>
+          <a href=""><i class="bi bi-trash"></i></a>
+        </td>
+      </tr>     
+    </tbody>
+  </table>
+
+
+  <div>
+    <input type="file" (click)="onChange($event)">
+    <button (click)="onUpload()">Upload</button>
+  </div>
+
+  <div *ngIf="shortLink">
+    <h2>visit Here</h2>
+    <a href="{{shortLink}}">{{shortLink}}</a>
+  </div>
+
+  <div *ngIf="loading">
+<h3>Loading....</h3>
+  </div>
